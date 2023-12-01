@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #006f75;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #pinContainer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pinBox {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #loginBtn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #006f75;
+        }
+    </style>
+</head>
+<body>
+    <img src="images.png" width="200" height="60">
+    <h2></h2>
+
+    <!-- Your login form goes here -->
+    <form>
+        <h2>Enter 4 Digit Pin</h2>
+        <div id="pinContainer">
+            <input class="pinBox" type="number" maxlength="1" id="pin1" oninput="focusNext(this, 'pin2')">
+            <input class="pinBox" type="number" maxlength="1" id="pin2" oninput="focusNext(this, 'pin3')">
+            <input class="pinBox" type="number" maxlength="1" id="pin3" oninput="focusNext(this, 'pin4')">
+            <input class="pinBox" type="number" maxlength="1" id="pin4" oninput="focusNext(this, 'loginBtn')">
+        </div>
+        <button id="loginBtn" type="button" onclick="checkPin()">Login</button>
+    </form>
+
+    <script>
+        function focusNext(current, nextFieldId) {
+            var maxLength = parseInt(current.getAttribute('maxlength'));
+            var currentValue = current.value;
+
+            if (currentValue.length === maxLength) {
+                // Focus on the next input field or button
+                document.getElementById(nextFieldId).focus();
+            }
+        }
+
+        function checkPin() {
+            var pin1 = document.getElementById('pin1').value;
+            var pin2 = document.getElementById('pin2').value;
+            var pin3 = document.getElementById('pin3').value;
+            var pin4 = document.getElementById('pin4').value;
+
+            var enteredPin = pin1 + pin2 + pin3 + pin4;
+
+            // Check against administrator PIN
+            if (enteredPin === '1234') {
+                // Redirect to the admindashboard.html page
+                window.location.href = 'admindashboard.html';
+            } 
+            // Check against operator PIN
+            else if (enteredPin === '9876') {
+                // Redirect to the operatorpage.html page
+                window.location.href = 'oppdashCOLUM.html';
+            } 
+
+            if (enteredPin === '1234') {
+                // Redirect to the admindashboard.html page
+                window.location.href = 'admindashboard.html';
+            } 
+            // Check against operator PIN
+            else if (enteredPin === '5678') {
+                // Redirect to the operatorpage.html page
+                window.location.href = 'operatordashboard.html';
+            }
+
+
+            if (enteredPin === '1234') {
+                // Redirect to the admindashboard.html page
+                window.location.href = 'admindashboard.html';
+            } 
+            // Check against operator PIN
+            else if (enteredPin === '2424') {
+                // Redirect to the operatorpage.html page
+                window.location.href = 'oppdashKC.html';
+            } 
+
+
+
+            if (enteredPin === '1234') {
+                // Redirect to the admindashboard.html page
+                window.location.href = 'admindashboard.html';
+            } 
+            // Check against operator PIN
+            else if (enteredPin === '8082') {
+                // Redirect to the operatorpage.html page
+                window.location.href = 'oppdashKEO.html';
+            } 
+
+            if (enteredPin === '1234') {
+                // Redirect to the admindashboard.html page
+                window.location.href = 'admindashboard.html';
+            } 
+            // Check against operator PIN
+            else if (enteredPin === '3116') {
+                // Redirect to the operatorpage.html page
+                window.location.href = 'oppdashWINN.html';
+            } 
+
+
+
+
+            // Incorrect PIN
+            else {
+                alert('Incorrect PIN. Please try again.');
+                // You may want to clear the input fields or take other actions on an incorrect PIN
+            }
+        }
+    </script>
+
+</body>
+</html>

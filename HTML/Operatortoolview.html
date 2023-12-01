@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+    <body>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="C:\Users\ICSKC12\.vscode\gitHub\index.html">
+            <img src="AmstedLogo.jpg" width="112" height="28">
+     
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+     
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="Operatordashboard.html">
+              Home
+            </a>
+            <a class="navbar-item" href="Operatortoolview.html">
+              View a Tool
+            </a>
+     
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Locations
+              </a>
+     
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="OppdashKEO.HTML">
+                  Keoukuk
+                </a>
+                <a class="navbar-item" href="OppdashCOLUM.html">
+                  Columbus
+                </a>
+                <a class="navbar-item" href="OppdashWINN.HTML">
+                  Winnepeg
+                </a>
+                <a class="navbar-item" href="OppdashKC.html">
+                  Kansas City
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+     
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <div class="navbar-link">
+                    Language
+                  </div>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/us.svg" alt="English">
+                      English
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/es.svg" alt="Spanish">
+                      Spanish
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/nl.svg" alt="Dutch">
+                      Dutch
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/de.svg" alt="German">
+                      German
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/fr.svg" alt="French">
+                      French
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/cn.svg" alt="Chinese">
+                      Chinese
+                    </a>
+                  </div>
+    </div>
+</div>
+</div>
+ 
+<div class="topnav">
+   
+    <input type="text" placeholder="Search..">
+    <a class="button is-light" href="Loginpage.html">Log Out</a>
+     </div>
+      </nav>
+    </div>
+  </nav>
+      <div class="columns">
+        <div class="column">
+          
+        </div>
+        <div class="column">
+          
+        </div>
+   
+      </div>
+ 
+      <!DOCTYPE html>
+<html>
+<head>
+  <title>Tool Maintenance</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: sans-serif;
+    }
+ 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+ 
+    td, th {
+      padding: 5px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+ 
+    .tool-labels {
+      text-align: right;
+    }
+ 
+    .tool-input {
+      width: 100%;
+    }
+ 
+    .buttons {
+      display: flex;
+      justify-content: bottom;
+      margin-bottom: 10px;
+    }
+ 
+    .button {
+      padding: 10px 15px;
+      background-color: #006f75;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+ 
+  </style>
+</head>
+<body>
+    <div style="width: 50%; float: left;">
+        <table>
+          <tr>
+            <td class="tool-labels">Tool ID:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="tool-labels">Status:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="tool-labels">Size:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="tool-labels">Location:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="tool-labels">Date sharpened:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="tool-labels">Uses:</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+ 
+  <div style="width: 50%; float: right;">
+    <table>
+      <tr>
+        <td><input type="text" class="tool-input" placeholder="Enter tool ID"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="tool-input" placeholder="Enter status"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="tool-input" placeholder="Enter size"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="tool-input" placeholder="Enter location"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="tool-input" placeholder="Enter date sharpened"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="tool-input" placeholder="Enter uses"></td>
+      </tr>
+    </table>
+  </div>
+ 
+  <div style="text-align: center;">
+    <button class="button">Dull</button>
+    <button class="button">Send to be Sharpened</button>
+</div>
+</body>
+</html>

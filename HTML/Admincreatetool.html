@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+    <body>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="C:\Users\ICSKC12\.vscode\gitHub\index.html">
+            <img src="AmstedLogo.jpg" width="112" height="28">
+     
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+     
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="Admindashboard.html">
+              Home
+            </a>
+            <a class="navbar-item" href="Admincreatetool.html">
+                Create a Tool
+              </a>
+            <a class="navbar-item" href="Admintoolview.html">
+              View a Tool
+            </a>
+     
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Locations
+              </a>
+     
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="AdmdashKEO.html">
+                  Keoukuk
+                </a>
+                <a class="navbar-item" href="AdmdashCOLUM.html">
+                  Columbus
+                </a>
+                <a class="navbar-item" href="AdmdashWINN.html">
+                  Winnepeg
+                </a>
+                <a class="navbar-item" href="AdmdashKC.html">
+                  Kansas City
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+     
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <div class="navbar-link">
+                    Language
+                  </div>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/us.svg" alt="English">
+                      English
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/es.svg" alt="Spanish">
+                      Spanish
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/nl.svg" alt="Dutch">
+                      Dutch
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/de.svg" alt="German">
+                      German
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/fr.svg" alt="French">
+                      French
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/cn.svg" alt="Chinese">
+                      Chinese
+                    </a>
+                  </div>
+    </div>
+</div>
+</div>
+ 
+<div class="topnav">
+   
+    <input type="text" placeholder="Search..">
+    <a class="button is-light" href="Loginpage.html">Log Out</a>
+     </div>
+      </nav>
+    </div>
+  </nav>
+  <section class="section">
+    <!-- Stylish header -->
+    <div class="container has-text-centered">
+      <h1 class="title is-1">Create a Tool</h1>
+    </div>
+    <!-- Grey box with input forms -->
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="box">
+            <form>
+              <div class="field">
+                <label class="label">Number of Tools</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="1">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Tool ID/s</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="A1357">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Size</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="24">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Location</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Kansas City">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Date</label>
+                <div class="control">
+                  <input class="input" type="date" placeholder="YYYY-MM-DD">
+                </div>
+              </div>
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Confirm and Clear buttons with increased margin-bottom -->
+    <div class="container has-text-centered" style="margin-bottom: 70px;">
+      <button class="button is-primary">Confirm</button>
+      <button class="button is-danger">Clear</button>
+    </div>
+  </section>
+</body>
+<script>
+  function clearFields() {
+    const inputFields = document.querySelectorAll('.input');
+    inputFields.forEach(field => {
+      field.value = '';
+    });
+  }
+ 
+  function validateFields() {
+    const inputFields = document.querySelectorAll('.input');
+    let allFilled = true;
+    inputFields.forEach(field => {
+      if (field.value === '') {
+        allFilled = false;
+      }
+    });
+    return allFilled;
+  }
+ 
+  const clearButton = document.querySelector('.button.is-danger');
+  clearButton.addEventListener('click', clearFields);
+ 
+  const confirmButton = document.querySelector('.button.is-primary');
+  confirmButton.addEventListener('click', function() {
+    if (validateFields()) {
+      alert('Tool Created Successfully!');
+    } else {
+      alert('Please fill in all input fields.');
+    }
+  });
+</script>
+</html>
